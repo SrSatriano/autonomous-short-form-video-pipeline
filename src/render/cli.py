@@ -10,8 +10,7 @@ def run_pipeline(topic: str, output_dir: Path, config: dict) -> Path:
     output_dir.mkdir(parents=True, exist_ok=True)
     script_path = output_dir / "script.txt"
     script_path.write_text(f"# Roteiro: {topic}\n\nHook...\nCorpo...\nCTA...", encoding="utf-8")
-    # TODO: TTS, b-roll, whisper, ffmpeg
-    final = output_dir / "final.mp4"
+        final = output_dir / "final.mp4"
     final.write_bytes(b"")  # placeholder
     return final
 
