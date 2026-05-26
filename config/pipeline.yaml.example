@@ -1,0 +1,11 @@
+topic: "exemplo"
+output_dir: output/
+resolution: [1080, 1920]
+fps: 30
+llm:
+  provider: openai
+  model: gpt-4o-mini
+tts:
+  voice: pt-BR-AntonioNeural
+ffmpeg:
+  hwaccel: nvenc  # ou videotoolbox, amf, none
